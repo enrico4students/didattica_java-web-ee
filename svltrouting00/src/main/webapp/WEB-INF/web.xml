@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	 xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	 version="3.1">
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+       
+    <servlet>
+        <servlet-name>FirstServlet</servlet-name>
+        <servlet-class>org.enrico4students.svltrouting00.FirstServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FirstServlet</servlet-name>
+        <url-pattern>/a/*</url-pattern>
+        <url-pattern>/b/*</url-pattern>
+        <url-pattern>/c/*</url-pattern>
+        <url-pattern>/d/*</url-pattern>
+        <url-pattern>/e/*</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>SecondServlet</servlet-name>
+        <servlet-class>org.enrico4students.svltrouting00.SecondServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SecondServlet</servlet-name>
+        <url-pattern>/f/*</url-pattern>
+        <url-pattern>/g/*</url-pattern>
+        <url-pattern>/h/*</url-pattern>
+        <url-pattern>/i/*</url-pattern>
+        <url-pattern>/j/*</url-pattern>
+        <url-pattern>/k*</url-pattern>
+        <url-pattern>/l*</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>ThirdServlet</servlet-name>
+        <servlet-class>org.enrico4students.svltrouting00.ThirdServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ThirdServlet</servlet-name>
+        <url-pattern>/m/*</url-pattern>
+        <url-pattern>/n/*</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>FourthServlet</servlet-name>
+        <servlet-class>org.enrico4students.svltrouting00.FourthServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FourthServlet</servlet-name>
+        <url-pattern>/prova</url-pattern>
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
+
+    
+    
+</web-app>
+
+
